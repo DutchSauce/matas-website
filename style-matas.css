@@ -30,6 +30,44 @@ input[type=text] {
   background: #ccc;
 }
 
+/* Hide the images by default */
+.mySlides{
+  display: none;
+  width: 100%;
+
+}
+
+.prev {
+  cursor: pointer;
+  position: absolute;
+  margin-top: -25%;
+  width: auto;
+  padding: 16px;
+  color:#132841;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+  /* Next & previous buttons */
+.next {
+  cursor: pointer;
+  position: absolute;
+  margin-top: -25%;
+  width: auto;
+  padding: 16px;
+  margin-left: -97%;
+  color: #132841;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  float: right;
+}
+
 @media only screen and (max-width: 600px) {
   * {
     margin: 0px;
@@ -234,9 +272,7 @@ input[type=text] {
     margin-top: 7.5px;
   }
 
-
-
-  .inspiration{
+  .inspiration {
     height: 89px;
     background-color: #ECECEC;
     margin-top: 10px;
@@ -244,50 +280,91 @@ input[type=text] {
     justify-content: space-around;
   }
 
-.stor-kampagne1{
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+  .mySlides{
+    margin-top: 10px;
+    display: none;
+    width: 92.5%;
+    margin-left: 14px;
+  }
+
+  .next {
+    margin-left: 87%;
+    margin-top: -65%;
+  }
+
+  .prev {
+    margin-top: -65%;
+  }
+
+.prev:hover, .next:hover {
+  background-color: rgba(115, 53, 93, 0.5);
 }
 
-.small-kampagne{
+.prikker {
+  position: absolute;
+  margin-left: 43%;
+  margin-top: -10%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #8198b4;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #132841;
+}
+
+.small-kampagne {
   margin-left: 14px;
   margin-top: 10px;
 }
 
-.small-kampagne img{
+.small-kampagne img {
   margin-right: 10px;
   margin-bottom: 10px;
 }
 
-.line1{
+.line1 {
   width: 95px;
   display: flex;
   height: 0.5px;
   background-color: black;
 }
 
-.anbefal-line1{
-  position: absolute;
+.anbefal-line1 {
+  top: 9px;
+  position: relative;
   left: 14px;
 }
 
-.anbefal-line2{
-  position: absolute;
+.anbefal-line2 {
+  top: 7px;
+  position: relative;
   left: 265px;
 }
 
-.anbefalinger{
+.anbefalinger h3 {
   text-align: center;
+  font-size: 14px;
+  position: absolute;
+  left: 33%;
+  font-family: century Gothic;
 }
 
-.tilbud{
-  margin-top: 10px;
+.tilbud {
+  margin-top: 15px;
   margin-left: 14px;
   margin-right: 10px;
 }
 
-.tilbud button{
+.tilbud button {
   height: 40px;
   border: 0px;
   width: 128px;
@@ -296,33 +373,115 @@ input[type=text] {
   font-family: century Gothic;
 }
 
-.forside-kurv-knap{
+.forside-kurv-knap {
   display: flex;
   justify-content: space-around;
 }
 
-footer{
-  height: 215px;
-  background-color: #ccc;
-}
-
-.vejledning{
+.vejledning {
   text-align: center;
   font-family: century Gothic;
-  position: relative;
   margin-top: 10px;
-  height: 330px;
+  height: 305px;
   background-color: #F5F1EE;
 }
 
-.vejledning img{
-  left: 50%;
-  display:
-}
-
-.gode-r-v{
+.vejledning img {
+  left: 4%;
   position: absolute;
-  left: 20%;
+  display: flex;
+  justify-content: center;
 }
 
+.gode-r-v {
+  top: 15px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.vej-grid {
+  position: relative;
+  top: 30px;
+  display: grid;
+  text-align: center;
+  grid-gap: 10px;
+  grid-template-areas:
+    'top-left top-left top-right top-right'
+    'bottom-left bottom-left bottom-right bottom-right';
+  padding: 10px;
+}
+
+.grid-item1 {
+  grid-area: top-left;
+}
+
+.grid-item2 {
+  grid-area: top-right;
+}
+
+.grid-item3 {
+  grid-area: bottom-left;
+}
+
+.grid-item4 {
+  grid-area: bottom-right;
+}
+
+.vej-grid>div {
+  background-color: #ffffff;
+  padding: 35px 5px 35px 5px;
+}
+
+.line2 {
+  width: 100%;
+  display: flex;
+  height: 0.5px;
+  background-color: black;
+}
+
+footer {
+  height: 215px;
+  background-color: #F6F6F5;
+}
+
+.info-footer {
+  font-family: century Gothic;
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-right: 60px;
+  margin-top: 20px;
+  height: 50%;
+  justify-content: space-between;
+}
+
+.info-footer a {
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+  color: #000000;
+}
+
+.some-footer {
+  position: relative;
+  height: 75px;
+  background-color: #000000;
+  bottom: -12px;
+  color: #FFFFFF;
+  font-family: century Gothic;
+  text-align: center;
+}
+
+.some-footer h5 {
+  font-size: 14px;
+}
+
+.some-footer svg {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
 }
