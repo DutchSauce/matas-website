@@ -52,9 +52,11 @@
     <div class="search-container">
       <form action="/action_page.php">
         <input type="text" placeholder="Søg produkter og artikeler" name="search">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65">
-        </line>
-      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65">
+          </line>
+        </svg>
     </div>
 
     <div class="top-banner">
@@ -91,8 +93,8 @@
           <li class="nav-item"><a href="#" class="nav-link">Makeup</a></li>
           <h4>MIN CLUB MATAS PROFIL</h4>
           <li class="nav-item"><a href="#" class="nav-link">log ind</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">log ind</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">log ind</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Opret profil</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Clubmatas</a></li>
           <h4>KUNDESERVICE</h4>
           <li class="nav-item"><a href="#" class="nav-link">Find butik</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Find butik</a></li>
@@ -106,8 +108,122 @@
         </ul>
       </nav>
     </div>
-    <script src="matas-javascript.js"></script>
+    <script src="silder.js"></script>
   </header>
+  <main>
+    <div class="inspiration">
+      <img src="images/Image 9.png" alt="Clubmatas">
+      <img src="images/Image 10.png" alt="Stories">
+      <img src="images/liveshopping.png" alt="Live Shopping">
+    </div>
+
+
+    <!-- billeder til galleri-->
+    <div class="galleri">
+      <img class="mySlides" src="images/dinpersonligehudtest.png" alt="Matas egen online Hudtest">
+      <div class="text">
+      </div>
+
+      <div class="galleri">
+        <img class="mySlides" src="images/dinpersonligehudtest.png" alt="Matas egen online Hudtest">
+        <div class="text">
+          <a href="#"></a>
+        </div>
+      </div>
+
+      <div class="galleri">
+        <img class="mySlides" src="images/dinpersonligehudtest.png" alt="Matas egen online Hudtest">
+        <div class="text">
+          <a href="#"></a>
+        </div>
+      </div>
+
+      <!-- pile til galleri-->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <!-- prikkerne til galleri-->
+
+    <div class="prikker" style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="small-kampagne">
+      <img src="images/Image 13.png" alt="Lille kampagne">
+      <img src="images/Image 12.png" alt="Lille kampagne">
+      <img src="images/Image 15.png" alt="Lille kampagne">
+      <img src="images/Image 14.png" alt="Lille kampagne">
+      <img src="images/Image 137.png" alt="Bred kampagne">
+    </div>
+
+    <div class="anbefalinger">
+      <div class="line1 anbefal-line1"></div>
+      <h3>Anbefalinger til dig</h3>
+      <div class="line1 anbefal-line2"></div>
+    </div>
+
+    <div class="tilbud">
+      <img src="/images/Image 17.png" alt="Tilbud til dig">
+      <img src="/images/Image 18.png" alt="Tilbud til dig">
+      <div class="forside-kurv-knap">
+        <button type="button" name="button">LÆG I KURV</button>
+        <button type="button" name="button">LÆG I KURV</button>
+      </div>
+    </div>
+
+    <div class="vejledning">
+      <img src="/images/DUT.png" alt="Gode råde og vejledning">
+      <h3 class="gode-r-v">GODE RÅD OG VEJLEDNING</h3>
+      <div class="vej-grid">
+        <div class="grid-item1">ONLINE-HUDTEST</div>
+        <div class="grid-item2">CHAT MED PERSONALET</div>
+        <div class="grid-item3">VI ELSKER OG ABEFALER</div>
+        <div class="grid-item4">TERM-ORDBOG</div>
+      </div>
+    </div>
+    </div>
+
+    <script src="matas-javascript.js"></script>
+  </main>
+  <footer>
+    <div class="line2 anbefal-line3"></div>
+
+    <div class="info-footer">
+      <div class="foot-kunde"><a href="#">KUNDESERVICE</a></div>
+      <div class="foot-eng"><a href="#">ENGLISH VERSION</a></div>
+      <div class="foot-club"><a href="#">CLUB MATAS PARTNERE</a></div>
+      <div class="foot-hjerte"><a href="#">HJERTESAGER</a></div>
+      <div class="foot-presse"><a href="#">PRESSE</a></div>
+      <div class="foot-om"><a href="#">OM MATAS</a></div>
+    </div>
+
+    <div class="some-footer">
+      <h5>FØLG MATAS</h5>
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5">
+        </rect>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-youtube">
+        <path
+          d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+        </path>
+        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smartphone">
+        <rect x="5" y="2" width="14" height="20" rx="2" ry="2">
+        </rect>
+        <line x1="12" y1="18" x2="12.01" y2="18"></line>
+      </svg>
+    </div>
+
+  </footer>
 </body>
 
 </html>
