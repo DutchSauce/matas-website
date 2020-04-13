@@ -1,0 +1,403 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+.search-container {
+  float: right;
+}
+input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.search-container button:hover {
+  background: #ccc;
+}
+@media only screen and (max-width: 600px) {
+
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+  }
+
+  /* BURGERMENU */
+.burgercontainer {
+  z-index: 1;
+  width: 50px;
+  height: 100vh;
+}
+burger-menu{
+    margin-right: 10px;
+  }
+
+  /* HEADER */
+  header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    box-sizing: border-box;
+    /*SKAL DEN HER VÆRE DER? DEN ER DÅM OG OGGEBOKKE (vil gerne vise dig det)*/
+  }
+
+  .logo{
+    width: 30%;
+    position: absolute;
+    margin-top: -85px;
+    margin-left: 10px;
+  }
+
+  #headericons{
+    position: absolute;
+    right: 90px;
+  }
+
+  #headericons img {
+    width: auto;
+    height: 100px;
+  }
+
+  /* BURGERMENU */
+  .burgercontainer {
+    z-index: 1;
+    width: 50px;
+    height: 100vh;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    position: fixed;
+    top: 170px;
+    display: flex;
+    right: -375px;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.8s cubic-bezier(0.5, 0, 0, 1);
+  }
+
+  .change {
+    right: 0;
+
+  }
+
+  .burger-menu {
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transition: all 0.8s;
+  }
+
+  .change .line-1 {
+    transform: rotateZ(-405deg) translate(-8px, 6px);
+  }
+
+  .change .line-2 {
+    opacity: 0;
+  }
+
+  .change .line-3 {
+    transform: rotateZ(405deg) translate(-8px, -6px);
+  }
+
+  .nav-list{
+    list-style: none;
+    top: 550px;
+  }
+
+ h4{
+   display: flex;
+   text-align: center;
+   background-color: #ECECEC;
+   width: 375px;
+   font: 19px;
+   padding: 10px 0 10px 0;
+   justify-content: center;
+   font-family: century gothic;
+ }
+.nav-item{
+  width: 375px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 3px;
+  border-color: #ffffff;
+}
+.nyheder{
+  width: 375px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 3px;
+  border-color: #ffffff;
+}
+  .nav-link {
+    text-decoration: none;
+    list-style: none;
+    width: 375px;
+    margin-left: 25px;
+    font-size: 18px;
+    font-family: century gothic;
+    color: red;
+    font-weight: 300;
+    border: 5px;
+    border-color: #ffffff;
+  }
+  .icons svg{
+    margin: 10px 10px 7px 10px;
+    position: ;
+  }
+.icons{
+  margin-left: 45px;
+  margin-top: -30px;
+}
+  .search-container {
+      margin-top: 8px;
+      margin-left: 14px;
+      margin-right: 14px;
+      margin-bottom: 8px;
+      top: 122px;
+      position: absolute;
+    }
+  .search-container svg {
+    position: absolute;
+    left: 300px;
+    top: 5px;
+      }
+  input[type=text], .search-container {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 94%;
+      margin: 0;
+      left: 15px;
+      right: 15px;
+      padding: ;
+    }
+  input[type=text] {
+      border: 1px solid #ccc;
+    }
+  .top-banner{
+    position: absolute;
+    font-size: 12px;
+    top: 170px;
+    font-family: century gothic;
+    background-color: #00244f;
+    height: 30px;
+    width: 100%;
+  }
+  .top-banner-text{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 7.5px;
+  }
+}
+
+/*  -----Produktside-----  */
+
+.produkt h2 {
+  font-family: 'Century Gothic';
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.flex-container-oeverst {
+  display: flex;
+  justify-content: center;
+}
+
+.materialist {
+  padding-top: 10px;
+  padding-right: 45px;
+}
+
+.stjerner {
+  padding-top: 15px;
+  padding-bottom: 7px;
+  padding-left: 30px;
+}
+
+.produkt {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-container-knapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-content: flex-end;
+    margin: 0;
+    list-style: none;
+    padding-top: 15px;
+}
+
+.laegikurvp {
+    background: #000000;
+    padding: 0;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    font-family: 'Century Gothic';
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5px;
+}
+
+.findibutik {
+    background: #ececec;
+    border: 1px solid #b8b8b8;
+    padding: 0;
+    width: 148px;
+    height: 28px;
+    line-height: 30px;
+    font-family: 'Century Gothic';
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 8px;
+}
+
+.testere {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+}
+
+.point {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+}
+
+
+.flex-container-andet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-content: flex-end;
+    margin: 0;
+    list-style: none;
+    padding-top: 15px;
+}
+
+.beskrivelse {
+    background: #ffffff;
+    border: 1px solid #000000;
+    padding: 0;
+    width: 320px;
+    height: 40px;
+    line-height: 40px;
+    font-family: 'Century Gothic';
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin: 5px;
+}
+
+.detaljer {
+    background: #ffffff;
+    border: 0.5px solid #000000;
+    padding: 0;
+    width: 320px;
+    height: 40px;
+    line-height: 40px;
+    font-family: 'Century Gothic';
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin: 5px;
+}
+
+.leveringreturnering {
+    background: #ffffff;
+    border: 0.5px solid #000000;
+    padding: 0;
+    width: 320px;
+    height: 40px;
+    line-height: 40px;
+    font-family: 'Century Gothic';
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin: 5px;
+}
+
+.spoergmaterialist {
+    background: #002643;
+    padding: 0;
+    width: 320px;
+    height: 40px;
+    line-height: 40px;
+    font-family: 'Century Gothic';
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin: 5px;
+}
+.hudtest {
+    background: #E9B1AC;
+    padding: 0;
+    width: 320px;
+    height: 40px;
+    line-height: 40px;
+    font-family: 'Century Gothic';
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin: 5px;
+}
+
+.nederst {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+}
