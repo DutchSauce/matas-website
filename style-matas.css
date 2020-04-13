@@ -4,13 +4,78 @@
   box-sizing: inherit;
 }
 
-.icons{
+body{
+  font-family: century Gothic;
+}
 
+header{
+  width: 100%;
+}
+
+main{
+  width: 100%;
+  height: 100%;
+}
+
+.nav-item img{
+  visibility: hidden;
+  width: 0%;
+}
+
+.logo{
+  margin-top: 10px;
+  width: 7%;
+  margin-left: 47%;
+}
+
+nav{
+  width: 100%;
+}
+
+
+
+ul{
+
+}
+
+ul li{
+list-style: none;
+display: inline-block;
+}
+
+ul li a{
+text-decoration: none;
+color: #000000;
+}
+
+.icons {
+  margin-left: 1670px;
+  margin-top: -40px;
+}
+
+
+
+.top-banner {
+  font-size: 14px;
+  top: 170px;
+  font-family: century Gothic;
+  background-color: #00244f;
+  height: 30px;
+  width: 100%;
+  padding: 2px 0 4px;
+}
+
+.top-banner-text {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 7.5px;
 }
 
 
 .search-container {
-  float: right;
+  float: left;
+  border: 3px;
+  border-color: black;
 }
 
 input[type=text] {
@@ -34,17 +99,25 @@ input[type=text] {
   background: #ccc;
 }
 
+.inspiration{
+  display: none;
+}
+
 /* Hide the images by default */
 .mySlides{
+  margin-top: 10px;
   display: none;
-  width: 100%;
-
+  width: 75%;
+  margin-left: 13%;
+  height: 500px;
 }
 
 .prev {
   cursor: pointer;
   position: absolute;
-  margin-top: -25%;
+  margin-top: -16%;
+  margin-left: 12%;
+  opacity: 0.5;
   width: auto;
   padding: 16px;
   color:#132841;
@@ -59,10 +132,11 @@ input[type=text] {
 .next {
   cursor: pointer;
   position: absolute;
-  margin-top: -25%;
+  margin-left: 86.2%;
+  margin-top: -16%;
+  opacity: 0.5;
   width: auto;
   padding: 16px;
-  margin-left: -97%;
   color: #132841;
   font-weight: bold;
   font-size: 30px;
@@ -70,6 +144,196 @@ input[type=text] {
   border-radius: 0 3px 3px 0;
   user-select: none;
   float: right;
+}
+
+.prev:hover, .next:hover{
+opacity: 1;
+}
+
+.prikker {
+position: absolute;
+margin-left: 50%;
+margin-top: -1.5%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+background-color: #8198b4;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #132841;
+}
+
+.small-kampagne{
+  margin-left: 33.5%;
+  padding: 10px;
+}
+
+.bred{
+  visibility: hidden;
+  width: 0%;
+}
+
+.line1 {
+  width: 595px;
+  display: flex;
+  height: 0.5px;
+  background-color: black;
+}
+
+.anbefal-line1 {
+  top: 9px;
+  position: relative;
+  left: 14%;
+}
+
+.anbefal-line2 {
+  top: 7px;
+  position: relative;
+  left: 58%;
+}
+
+.anbefalinger h3 {
+  text-align: center;
+  font-size: 14px;
+  position: absolute;
+  left: 48%;
+  font-family: century Gothic;
+}
+
+.tilbud {
+  margin-top: 15px;
+  margin-left: 43%;;
+  margin-right: 10px;
+}
+
+.tilbud button {
+  height: 40px;
+  border: 0px;
+  margin-left: 30px;
+  width: 128px;
+  color: #ffffff;
+  background-color: #000000;
+  font-family: century Gothic;
+}
+
+.vejledning {
+  width: 75%;
+  margin-left: 15%;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: century Gothic;
+  margin-top: 10px;
+  height: 305px;
+  background-color: #F5F1EE;
+}
+
+.vejledning img {
+  left: 15%;
+  width: 75%;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.gode-r-v {
+  top: 15px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.vej-grid {
+  position: relative;
+  top: 30px;
+  display: grid;
+  text-align: center;
+  grid-gap: 10px;
+  grid-template-areas:
+    'top-left top-left top-right top-right'
+    'bottom-left bottom-left bottom-right bottom-right';
+  padding: 10px;
+}
+
+.grid-item1 {
+  grid-area: top-left;
+}
+
+.grid-item2 {
+  grid-area: top-right;
+}
+
+.grid-item3 {
+  grid-area: bottom-left;
+}
+
+.grid-item4 {
+  grid-area: bottom-right;
+}
+
+.vej-grid>div {
+  background-color: #ffffff;
+  padding: 35px 5px 35px 5px;
+}
+
+.line2 {
+  width: 100%;
+  display: flex;
+  height: 0.5px;
+  background-color: black;
+}
+
+footer {
+  height: 215px;
+  background-color: #F6F6F5;
+}
+
+.info-footer {
+  font-family: century Gothic;
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-right: 60px;
+  margin-top: 20px;
+  height: 50%;
+  justify-content: space-between;
+}
+
+.info-footer a {
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+  color: #000000;
+}
+
+.some-footer {
+  position: relative;
+  height: 75px;
+  background-color: #000000;
+  bottom: -33px;
+  color: #FFFFFF;
+  font-family: century Gothic;
+  text-align: center;
+}
+
+.some-footer h5 {
+  font-size: 14px;
+}
+
+.some-footer svg {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -86,8 +350,6 @@ input[type=text] {
     height: 100vh;
   }
 
-
-
   burger-menu {
     margin-right: 10px;
   }
@@ -95,14 +357,17 @@ input[type=text] {
   /* HEADER */
   header {
     width: 100%;
+    top: 0px;
     height: 200px;
     display: flex;
     background-color: #ffffff;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    box-sizing: border-box;
-    /*SKAL DEN HER VÆRE DER? DEN ER DÅM OG OGGEBOKKE (vil gerne vise dig det)*/
+  }
+
+  header img{
+    visibility: visible;
   }
 
   .logo {
@@ -201,11 +466,8 @@ input[type=text] {
 
   .nav-item img{
     width: 30%;
+    visibility: visible;
   }
-
-.right{
-  left: 150px;
-}
 
   .nyheder {
     width: 375px;
@@ -216,6 +478,7 @@ input[type=text] {
   }
 
   .nav-link {
+    display: block;
     text-decoration: none;
     list-style: none;
     width: 375px;
@@ -228,6 +491,8 @@ input[type=text] {
     border: 5px;
     border-color: #ffffff;
   }
+
+
 
   .cl-matas{
     text-decoration: none;
@@ -249,11 +514,10 @@ input[type=text] {
 
   .icons svg {
     margin: 10px 10px 7px 10px;
-    position: ;
   }
 
   .icons {
-    margin-left: 45px;
+    margin-left: 43px;
     margin-top: -30px;
   }
 
@@ -295,6 +559,7 @@ input[type=text] {
     background-color: #00244f;
     height: 30px;
     width: 100%;
+    padding: 0;
   }
 
   .top-banner-text {
@@ -302,6 +567,8 @@ input[type=text] {
     text-align: center;
     margin-top: 7.5px;
   }
+
+
 
   .inspiration {
     height: 89px;
@@ -321,14 +588,16 @@ input[type=text] {
   .next {
     margin-left: 87%;
     margin-top: -65%;
+    opacity: 0.5;
   }
 
   .prev {
     margin-top: -65%;
+    opacity: 0.5;
   }
 
-.prev:hover, .next:hover {
-  background-color: rgba(115, 53, 93, 0.5);
+.prev:hover, .next:hover{
+  opacity: 1;
 }
 
 .prikker {
@@ -358,7 +627,7 @@ input[type=text] {
 }
 
 .small-kampagne img {
-  margin-right: 10px;
+  margin-right: 1px;
   margin-bottom: 10px;
 }
 
@@ -410,18 +679,20 @@ input[type=text] {
 }
 
 .vejledning {
+  width: 100%;
   text-align: center;
   font-family: century Gothic;
   margin-top: 10px;
+  margin-left: 0;
   height: 305px;
   background-color: #F5F1EE;
 }
 
 .vejledning img {
-  left: 4%;
   position: absolute;
   display: flex;
   justify-content: center;
+  left: 12.5%;
 }
 
 .gode-r-v {
@@ -491,7 +762,7 @@ footer {
 
 .info-footer a {
   text-decoration: none;
-  text-align: center;
+  text-align: left;
   list-style: none;
   color: #000000;
 }
