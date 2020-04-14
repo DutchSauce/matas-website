@@ -3,6 +3,9 @@
   padding: 0px;
   box-sizing: inherit;
 }
+
+
+
 .search-container {
   float: right;
 }
@@ -310,6 +313,156 @@ burger-menu{
 }
 
 
+/**********/
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.accordion{
+    background: #ffffff;
+    width: 308px;
+    height: 40px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.accordion-tab {
+  padding-bottom: 10px;
+}
+
+.accordion-tab > .accordion-toggle{
+    position: absolute;
+    display: none;
+}
+
+label {
+  padding-left: 5px;
+  text-align: center;
+}
+
+.accordion-tab > label{
+    font-family: 'Century Gothic';
+    color: #000000;
+    background: #ffffff;
+    border: 0.5px solid #000000;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 600;
+    position: relative;
+    display: block;
+    height: 40px;
+    cursor: pointer;
+}
+
+.accordion-tab > .accordion-content{
+    max-height: 0;
+    transition: 350ms;
+    overflow: hidden;
+}
+
+.accordion-tab > label:after {
+    content: '\f054';
+    position: absolute;
+    right: 20px;
+    font-family: fontawesome;
+    transform: rotate(90deg);
+    transition:transform .30s ;
+}
+
+.accordion-tab > .accordion-toggle:checked ~ label:after{
+    transform: rotate(270deg);
+}
+
+.accordion-tab > .accordion-toggle:checked ~ .accordion-content{
+    max-height: 100vh;
+    overflow: auto;
+}
+
+.accordion-tab > .accordion-content p {
+    padding: 30px 20px;
+    font-family: 'Century Gothic';
+    border: 0.5px solid #000000;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.toggle4 label {
+    background: red;
+    font-family: 'Century Gothic';
+    color: blue;
+}
+
+.beskrivelsen {
+  width: 308px;
+}
+
+.detaljen {
+  width: 308px;
+}
+
+/*****************************/
+.accordion-tab1 {
+  padding-bottom: 10px;
+}
+
+.accordion-tab1 > .accordion-toggle{
+    position: absolute;
+    display: none;
+}
+
+
+.accordion-tab1 > label{
+    font-family: 'Century Gothic';
+    color: #ffffff;
+    background: #002643;
+    border: 0.5px solid #002643;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 600;
+    position: relative;
+    display: block;
+    height: 40px;
+    cursor: pointer;
+}
+
+.accordion-tab1 > .accordion-content{
+    max-height: 0;
+    transition: 350ms;
+    overflow: hidden;
+}
+
+.accordion-tab1 > label:after {
+    content: '\f054';
+    position: absolute;
+    right: 20px;
+    font-family: fontawesome;
+    transform: rotate(90deg);
+    transition:transform .30s ;
+}
+
+.accordion-tab1 > .accordion-toggle:checked ~ label:after{
+    transform: rotate(270deg);
+}
+
+.accordion-tab1 > .accordion-toggle:checked ~ .accordion-content{
+    max-height: 100vh;
+    overflow: auto;
+}
+
+.accordion-tab1 > .accordion-content p {
+    padding: 50px 20px;
+    font-family: 'Century Gothic';
+    border: 0.5px solid #000000;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.chatprodukt {
+  width: 308px;
+}
+
+
+
+/***********************************************/
 .flex-container-andet {
     display: flex;
     align-items: center;
@@ -320,67 +473,8 @@ burger-menu{
     align-content: flex-end;
     margin: 0;
     list-style: none;
-    padding-top: 15px;
 }
 
-.beskrivelse {
-    background: #ffffff;
-    border: 1px solid #000000;
-    padding: 0;
-    width: 320px;
-    height: 40px;
-    line-height: 40px;
-    font-family: 'Century Gothic';
-    color: #000000;
-    font-size: 16px;
-    font-weight: 600;
-    text-align: center;
-    margin: 5px;
-}
-
-.detaljer {
-    background: #ffffff;
-    border: 0.5px solid #000000;
-    padding: 0;
-    width: 320px;
-    height: 40px;
-    line-height: 40px;
-    font-family: 'Century Gothic';
-    color: #000000;
-    font-size: 16px;
-    font-weight: 600;
-    text-align: center;
-    margin: 5px;
-}
-
-.leveringreturnering {
-    background: #ffffff;
-    border: 0.5px solid #000000;
-    padding: 0;
-    width: 320px;
-    height: 40px;
-    line-height: 40px;
-    font-family: 'Century Gothic';
-    color: #000000;
-    font-size: 16px;
-    font-weight: 600;
-    text-align: center;
-    margin: 5px;
-}
-
-.spoergmaterialist {
-    background: #002643;
-    padding: 0;
-    width: 320px;
-    height: 40px;
-    line-height: 40px;
-    font-family: 'Century Gothic';
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 600;
-    text-align: center;
-    margin: 5px;
-}
 .hudtest {
     background: #E9B1AC;
     padding: 0;
@@ -392,12 +486,12 @@ burger-menu{
     font-size: 16px;
     font-weight: 600;
     text-align: center;
-    margin: 5px;
 }
 
 .nederst {
+  width: 308px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 15px;
+  padding-top: 20px;
 }
