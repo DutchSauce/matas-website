@@ -425,24 +425,25 @@ color: #ffffff;
   margin-right: 25px;
 }
 
-.br-fa-grid img{
-  color: rgba(143, 143, 143, 0.6);
+.br-fa-img{
+  opacity: 0.47;
 }
+
 
 .dine-br{
   position: absolute;
-  margin-left: 46px;
-  margin-top: 51px;
-  font-size: 12px;
+  margin-left: 38.5px;
+  margin-top: -75px;
+  font-size: 14px;
   font-weight: 600;
   color: #132841;
 }
 
 .dine-fa{
   position: absolute;
-  margin-left: 38px;
-  margin-top: 51px;
-  font-size: 12px;
+  margin-left: 27.5px;
+  margin-top: -75px;
+  font-size: 14px;
   font-weight: 600;
   color: #132841;
 }
@@ -452,10 +453,10 @@ color: #ffffff;
   height: 17px;
   background: #EB595E;
   display: block;
-  margin-left: 45px;
-  width: 84px;
+  margin-left: 33px;
+  width: 100px;
   color: #ffffff;
-  font-size: 9px;
+  font-size: 11px;
   margin-top: -50px;
   position: absolute;
 }
