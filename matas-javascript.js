@@ -1,3 +1,4 @@
+//BURGERMENU
 const menuIcon = document.querySelector(".burger-menu");
 const navbar = document.querySelector(".navbar");
 
@@ -5,6 +6,7 @@ menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("change");
 });
 
+//SILDESHOW
 var slideIndex = 1;
 showSlides(slideIndex);
 
