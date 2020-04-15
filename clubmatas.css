@@ -341,7 +341,7 @@ input[type=text] {
 /* TILHØRE STIRBER.HTML */
   .point2 {
     background: #EB595E;
-    position: absolute;
+    /* position: absolute; */
     width: 60px;
     height: 60px;
     margin-top: 30px;
@@ -350,7 +350,25 @@ input[type=text] {
     border-radius: 180px;
   }
 
-  canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; max-height: 100px; background-color: #ffffff; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+  canvas{
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    vertical-align: bottom;
+  }
+  /* ---- particles.js container ---- */
+  #particles-js{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    background-color: #ffffff;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
 
   .text-point {
     font-weight: 600;
@@ -455,11 +473,12 @@ input[type=text] {
 
 /* TILHØRE STIRBER.HTML */
 .point-info{
+  display: block;
   font-size: 12px;
   text-align: center;
   height: 50px;
-  width: 309px;
-  margin-left: 39px;
+  width: 100%;
+  text-align: center;
 }
 
 
