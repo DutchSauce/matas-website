@@ -1,4 +1,3 @@
-//BURGERMENU - Frederik & Andrés del
 const menuIcon = document.querySelector(".burger-menu");
 const navbar = document.querySelector(".navbar");
 
