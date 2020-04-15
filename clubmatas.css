@@ -179,7 +179,6 @@ input[type=text] {
     height: 80vh;
     overflow-x: scroll;
     z-index: 103 !important;
-    position: inherit;
   }
 
   .nav-item {
