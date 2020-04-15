@@ -1,4 +1,4 @@
-//BURGERMENU
+//BURGERMENU - Frederik & Andrés del
 const menuIcon = document.querySelector(".burger-menu");
 const navbar = document.querySelector(".navbar");
 
@@ -6,7 +6,7 @@ menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("change");
 });
 
-//SILDESHOW
+//SILDESHOW - Marks & Andrés del
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -37,7 +37,5 @@ for (i = 0; i < text.length; i++) {
 
   slides[slideIndex-1].style.display = "block";
   text[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].className += "active";
 }
-
-//Clubmatas Bubbles
