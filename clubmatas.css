@@ -381,9 +381,11 @@ input[type=text] {
 /* TILHØRE STIRBER.HTML */
   .text-point2 {
     text-align: center;
-    padding-top: 11px;
+    padding-top: 10px;
     font-size: 14px;
     color: #ffffff;
+    z-index: 101;
+    position: relative;
   }
 
   /* TILHØRE STIRBER.HTML */
