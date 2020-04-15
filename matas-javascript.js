@@ -39,3 +39,5 @@ for (i = 0; i < text.length; i++) {
   text[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+//Clubmatas Bubbles
