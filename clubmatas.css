@@ -69,10 +69,6 @@ input[type=text] {
     height: 100vh;
   }
 
-  burger-menu {
-    margin-right: 10px;
-  }
-
   /* HEADER */
   header {
     width: 100%;
@@ -111,6 +107,7 @@ input[type=text] {
     z-index: 1;
     width: 50px;
     height: 100vh;
+    z-index: 110;
   }
 
   .navbar {
@@ -134,7 +131,7 @@ input[type=text] {
     height: 30px;
     position: fixed;
     top: 10px;
-    right: 35px;
+    right: 10px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -162,6 +159,7 @@ input[type=text] {
 
   .nav-list {
     list-style: none;
+    margin-right: 20px;
   }
 
   h4 {
@@ -179,6 +177,7 @@ input[type=text] {
     height: 80vh;
     overflow-x: scroll;
     z-index: 103 !important;
+
   }
 
   .nav-item {
