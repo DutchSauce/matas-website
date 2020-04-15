@@ -341,6 +341,7 @@ input[type=text] {
 /* TILHØRE STIRBER.HTML */
   .point2 {
     background: #EB595E;
+    position: absolute;
     width: 60px;
     height: 60px;
     margin-top: 30px;
@@ -348,6 +349,8 @@ input[type=text] {
     margin-left: 43%;
     border-radius: 180px;
   }
+
+  canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; max-height: 100px; background-color: #ffffff; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
   .text-point {
     font-weight: 600;
