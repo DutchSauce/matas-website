@@ -456,6 +456,12 @@ footer {
     font-family: century gothic;
   }
 
+  .nav-container{
+    height: 80vh;
+    overflow-x: scroll;
+    z-index: 1000 !important;
+  }
+
   .nav-item {
     width: 375px;
     margin-top: 10px;
@@ -583,6 +589,7 @@ footer {
     display: none;
     width: 92.5%;
     margin-left: 14px;
+    height: 348px;
   }
 
   .next {
@@ -594,6 +601,7 @@ footer {
   .prev {
     margin-top: -65%;
     opacity: 0.5;
+    margin-left: -1%;
   }
 
 .prev:hover, .next:hover{
