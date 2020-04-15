@@ -134,7 +134,7 @@ input[type=text] {
     height: 30px;
     position: fixed;
     top: 10px;
-    right: 10px;
+    right: 35px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -173,6 +173,13 @@ input[type=text] {
     padding: 10px 0 10px 0;
     justify-content: center;
     font-family: century gothic;
+  }
+
+  .nav-container {
+    height: 80vh;
+    overflow-x: scroll;
+    z-index: 103 !important;
+    position: inherit;
   }
 
   .nav-item {
@@ -256,7 +263,7 @@ input[type=text] {
     float: none;
     display: block;
     text-align: left;
-    width: 94%;
+    width: 96%;
     margin: 0;
     left: 15px;
     right: 10px;
@@ -295,8 +302,7 @@ input[type=text] {
     margin-top: 10px;
   }
 
-
-/* TILHØRE STIRBER.HTML */
+  /* TILHØRE STIRBER.HTML */
   h2 {
     font-size: 19px;
     background-color: #EB595E;
@@ -337,8 +343,7 @@ input[type=text] {
     border-radius: 180px;
   }
 
-
-/* TILHØRE STIRBER.HTML */
+  /* TILHØRE STIRBER.HTML */
   .point2 {
     background: #EB595E;
     /* position: absolute; */
@@ -350,16 +355,17 @@ input[type=text] {
     border-radius: 180px;
   }
 
-  canvas{
+  canvas {
     display: block;
     position: absolute;
     top: 0;
     z-index: 100;
     vertical-align: bottom;
   }
+
   /* ---- particles.js container ---- */
-  #particles-js{
-    position:relative;
+  #particles-js {
+    position: relative;
     width: 100%;
     height: 100%;
     max-height: 500px;
@@ -377,8 +383,7 @@ input[type=text] {
     color: #ffffff;
   }
 
-
-/* TILHØRE STIRBER.HTML */
+  /* TILHØRE STIRBER.HTML */
   .text-point2 {
     text-align: center;
     padding-top: 10px;
@@ -389,12 +394,12 @@ input[type=text] {
   }
 
   /* TILHØRE STIRBER.HTML */
-    .text-point3 {
-      text-align: center;
-      padding-top: 20px;
-      font-size: 14px;
-      color: #ffffff;
-    }
+  .text-point3 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #ffffff;
+  }
 
   .vis-striber {
     text-align: center;
@@ -403,8 +408,7 @@ input[type=text] {
     margin-left: 190px;
   }
 
-
-/* TILHØRE STIRBER.HTML */
+  /* TILHØRE STIRBER.HTML */
   .vis-striber2 {
     text-align: center;
     margin-top: 20px;
@@ -415,115 +419,114 @@ input[type=text] {
     margin-left: 18px;
   }
 
-/* TILHØRE STIRBER.HTML */
+  /* TILHØRE STIRBER.HTML */
   .vis-striber2 p {
     margin-left: 26px;
   }
 
-/* TILHØRE STIRBER.HTML */
-.striber2 {
-  font-weight: 600;
-  text-align: center;
-  font-size: 19px;
-}
+  /* TILHØRE STIRBER.HTML */
+  .striber2 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 19px;
+  }
 
-/* TILHØRE STIRBER.HTML */
-.striber2 b{
-  color: #EB595E
-}
+  /* TILHØRE STIRBER.HTML */
+  .striber2 b {
+    color: #EB595E
+  }
 
-/* TILHØRE STIRBER.HTML */
-.l-mere{
-  height: 30px;
-  background: #F2F6FA;
-  width: 120px;
-  margin-top: 20px;
-  margin-left: 133px;
-  text-align: center;
-  border-color: #132841;
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-}
+  /* TILHØRE STIRBER.HTML */
+  .l-mere {
+    height: 30px;
+    background: #F2F6FA;
+    width: 120px;
+    margin-top: 20px;
+    margin-left: 133px;
+    text-align: center;
+    border-color: #132841;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
 
-/* TILHØRE STIRBER.HTML */
-.l-mere p{
-  padding-top: 7.5px;
-  color: #132841;
-  font-size: 12px;
-  font-weight: 600;
-}
+  /* TILHØRE STIRBER.HTML */
+  .l-mere p {
+    padding-top: 7.5px;
+    color: #132841;
+    font-size: 12px;
+    font-weight: 600;
+  }
 
-/* TILHØRE STIRBER.HTML */
-.striber3 {
-  font-weight: 600;
-  text-align: center;
-  font-size: 19px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
+  /* TILHØRE STIRBER.HTML */
+  .striber3 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
 
-/* TILHØRE STIRBER.HTML */
-.striber3 p{
-  margin-bottom: 10px;
-}
+  /* TILHØRE STIRBER.HTML */
+  .striber3 p {
+    margin-bottom: 10px;
+  }
 
-/* TILHØRE STIRBER.HTML */
-.point-info{
-  display: block;
-  font-size: 12px;
-  text-align: center;
-  height: 50px;
-  width: 100%;
-  text-align: center;
-}
+  /* TILHØRE STIRBER.HTML */
+  .point-info {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+  }
 
+  /* TILHØRE STIRBER.HTML */
+  .striber4 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
 
-/* TILHØRE STIRBER.HTML */
-.striber4 {
-  font-weight: 600;
-  text-align: center;
-  font-size: 19px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
+  /* TILHØRE STIRBER.HTML */
+  .striber5 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
 
-/* TILHØRE STIRBER.HTML */
-.striber5 {
-  font-weight: 600;
-  text-align: center;
-  font-size: 19px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
+  /* TILHØRE STIRBER.HTML */
+  .striber5 img {
+    margin-top: 10px;
+  }
 
-/* TILHØRE STIRBER.HTML */
-.striber5 img{
-  margin-top: 10px;
-}
+  /* TILHØRE STIRBER.HTML */
+  .historik {
+    margin-top: 10px;
+    background: #F2F6FA;
+    height: 40px;
+    width: 170px;
+    margin-left: 110px;
+  }
 
-/* TILHØRE STIRBER.HTML */
-.historik{
-  margin-top: 10px;
-  background: #F2F6FA;
-  height: 40px;
-  width: 170px;
-  margin-left: 110px;
-}
-
-/* TILHØRE STIRBER.HTML */
-.historik p{
-  margin-top: 10px;
-  color: #132841;
-  font-weight: 600;
-  text-align: center;
-  padding-top: 10px;
-}
+  /* TILHØRE STIRBER.HTML */
+  .historik p {
+    margin-top: 10px;
+    color: #132841;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;
+  }
 
   .fordele {
     text-align: center;
